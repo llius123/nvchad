@@ -14,5 +14,15 @@ M.base46 = {
 	-- 	["@comment"] = { italic = true },
 	-- },
 }
+M.mapping = {
+disabled = {
+  n = {
+    ['<C-n>'] = '',
+    ['<leader>e'] = '',
+    ['<leader>x'] = ''
+  }
+}
+  }
+
 
 return M
