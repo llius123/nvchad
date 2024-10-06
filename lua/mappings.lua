@@ -79,3 +79,8 @@ end, { noremap = true, silent = true, desc = "Tabs: Close buffer" })
 vim.keymap.set("n", "<C-t>", function()
   require("menu").open "default"
 end, {})
+
+-- Telecope with grep
+vim.keymap.set("n", "<leader>fw", function()
+  require("telescope").extensions.egrepify.egrepify()
+end, { desc = "telescope live grep" })
