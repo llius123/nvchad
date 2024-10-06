@@ -74,3 +74,8 @@ vim.cmd "autocmd BufEnter * setlocal formatoptions-=cro"
 vim.keymap.set("n", "<leader>bc", function()
   require("nvchad.tabufline").close_buffer()
 end, { noremap = true, silent = true, desc = "Tabs: Close buffer" })
+
+-- Open menu modal
+vim.keymap.set("n", "<C-t>", function()
+  require("menu").open "default"
+end, {})
